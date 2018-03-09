@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./style/index.css" type="text/css">
+  </head>
+  <body>
+    <form id="standard">
+      <input type="text" value="" readonly id="note">
+      <input type="number" value="0" readonly id="input">
+      <div class="row2">
+        <button>%</button>
+        <button>&radic;</button>
+        <button>x<sup>2</sup></button>
+        <button>1/x</button>
+      </div>
+      <div class="row3">
+        <button>CE</button>
+        <button>C</button>
+        <button><-</button>
+        <button>/</button>
+      </div>
+      <div class="row4">
+        <button type="button" onclick="display('7')">7</button>
+        <button type="button" onclick="display('8')">8</button>
+        <button type="button" onclick="display('9')">9</button>
+        <button>*</button>
+      </div>
+      <div class="row5">
+        <button type="button" onclick="display('4')">4</button>
+        <button type="button" onclick="display('5')">5</button>
+        <button type="button" onclick="display('6')">6</button>
+        <button type="button" onclick="math('-')">-</button>
+      </div>
+      <div class="row6">
+        <button type="button" onclick="display('1')">1</button>
+        <button type="button" onclick="display('2')">2</button>
+        <button type="button" onclick="display('3')">3</button>
+        <button type="button" onclick="math('+')">+</button>
+      </div>
+      <div class="row7">
+        <button>+-</button>
+        <button type="button" onclick="display(0)">0</button>
+        <button>,</button>
+        <button>=</button>
+      </div>
+    </form>
+    <script src="./script/calculate.js"></script>
+  </body>
+</html>

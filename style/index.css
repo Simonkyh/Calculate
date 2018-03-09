@@ -1,0 +1,31 @@
+html,body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#standard {
+  width: 25%;
+}
+#standard input {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  font-size: 2em;
+}
+.row2, .row3, .row4, .row5, .row6, .row7 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.row2 button, .row3 button, .row4 button,
+.row5 button, .row6 button, .row7 button {
+  width: 24%;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
