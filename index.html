@@ -10,10 +10,10 @@
       <input type="text" value="" readonly id="note">
       <input type="text" value="0" readonly id="input">
       <div class="row2">
-        <button>%</button>
-        <button>&radic;</button>
-        <button>x<sup>2</sup></button>
-        <button>1/x</button>
+        <button type="button" onclick="percent()">%</button>
+        <button type="button" onclick="squareroot()">&radic;</button>
+        <button type="button" onclick="timesitself()">x<sup>2</sup></button>
+        <button type="button" onclick="splitone()">1/x</button>
       </div>
       <div class="row3">
         <button type="button" onclick="clearcurrent()">CE</button>
@@ -40,7 +40,7 @@
         <button type="button" onclick="math('+')">+</button>
       </div>
       <div class="row7">
-        <button>+-</button>
+        <button type="button" onclick="posneg()">+-</button>
         <button type="button" onclick="display('0')">0</button>
         <button type="button" onclick="display('.')">,</button>
         <button type="button" onclick="equal()">=</button>
