@@ -9,14 +9,45 @@ body {
   justify-content: center;
   align-items: center;
 }
+button:hover {
+  color: white;
+  background-color: black;
+}
 #standard {
   width: 25%;
 }
-#standard input {
+#history {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  width: 25%;
+  min-height: 207px;
+  height: auto;
+  box-sizing: border-box;
+  margin-left: 5%;
+  border: 1px solid black;
+}
+#history p {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  border-bottom: 1px solid black;
+  padding: 5%;
+  box-sizing: border-box;
+}
+#input {
   width: 100%;
   text-align: right;
   box-sizing: border-box;
   font-size: 2em;
+  border-top: 0;
+}
+#note {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  color: grey;
+  border-bottom: 0;
 }
 .row2, .row3, .row4, .row5, .row6, .row7 {
   display: flex;
@@ -27,5 +58,5 @@ body {
 .row5 button, .row6 button, .row7 button {
   width: 24%;
   box-sizing: border-box;
-  border: 1px solid grey;
+  border: 1px solid black;
 }
