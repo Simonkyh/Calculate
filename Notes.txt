@@ -1,0 +1,4 @@
+can do multiple dots
+
+when only entering one value and pressing equal we get " = number" 
+we want it to present as "number = number"

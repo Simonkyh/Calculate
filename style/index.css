@@ -34,6 +34,11 @@ button:hover {
   border-bottom: 1px solid black;
   padding: 5%;
   box-sizing: border-box;
+  font-size: 0.8em;
+}
+#history p span {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 #input {
   width: 100%;
@@ -48,6 +53,7 @@ button:hover {
   box-sizing: border-box;
   color: grey;
   border-bottom: 0;
+  font-size: 0.8em;
 }
 .row2, .row3, .row4, .row5, .row6, .row7 {
   display: flex;

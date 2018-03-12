@@ -58,22 +58,30 @@ function percent() {
     note.value = '0';
     input.value = '0';
 } else {
-    numbers = (cal.number1 * Number(numbers)) / 100;
+    str += `(${numbers}%)`;
+    note.value = str;
+    numbers = ((cal.number1 * Number(numbers)) / 100).toString();
     input.value = numbers;
   }
 }
 
 function squareroot() {
+  str += `√( ${numbers} ) `;
+  note.value = str;
   numbers = Math.sqrt(Number(numbers)).toString();
   input.value = numbers;
 }
 
 function timesitself() {
+  str += `( ${numbers}² ) `
+  note.value = str;
   numbers = numbers * numbers;
   input.value = numbers;
 }
 
 function splitone() {
+  str += `( 1/${numbers} ) `
+  note.value = str;
   numbers = (1 / Number(numbers)).toString();
   input.value = numbers;
 }
@@ -81,11 +89,13 @@ function splitone() {
 function equal() {
   if(cal.operator == '') {
     input.value = numbers;
+    history.push(`${str} = <br><span> ${numbers} </span>`);
+    historyC.innerHTML += `<p> ${str} = <br><span> ${numbers} </span> </p>`;
 } else {
     cal.number2 = Number(numbers);
     cal.number1 = operators[cal.operator](cal.number1, Number(cal.number2));
     numbers = cal.number1.toString();
-    str += `${cal.number2.toString()} = ${numbers}`;
+    str += `${cal.number2.toString()} = <br><span> ${numbers} </span>`;
     history.push(str);
     historyC.innerHTML += `<p> ${str} </p>`;
     //str += cal.number2.toString() + " = " + numbers;
